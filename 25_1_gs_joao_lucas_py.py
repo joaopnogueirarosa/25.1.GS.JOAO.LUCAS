@@ -78,3 +78,17 @@ bairro_mais_grave = bairros[indice_maior_desastre]
 cidade_mais_grave = cidades[indice_maior_desastre]
 pais_mais_grave = paises[indice_maior_desastre]
 evento_mais_grave = tipos_desastres[indice_maior_desastre]
+
+print("----------------- RELATÓRIO FINAL -----------------")
+print(f"Total de desastres registrados: {total_desastres}")
+print(f"Total geral de pessoas afetadas: {total_geral_afetados}")
+
+print("\nTotal de pessoas em cada categoria:")
+print(f"Crianças: {total_criancas} | Adultos: {total_adultos} | Idosos: {total_idosos} | Mobilidade reduzida: {total_mobilidade} | Feridos: {total_feridos}")
+
+print(f"\nCategoria mais afetada no geral: {categoria_mais_afetada}")
+
+print(f"\nDesastre com maior número de afetados ocorreu no evento:")
+print(f"Tipo: {evento_mais_grave}")
+print(f"Rua: {rua_mais_grave}, Bairro: {bairro_mais_grave}, Cidade: {cidade_mais_grave}, País: {pais_mais_grave}")
+print("-"*50)
