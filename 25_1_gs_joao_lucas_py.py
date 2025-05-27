@@ -53,3 +53,28 @@ for i in range(quantidade):
             print("\n Erro: A soma das categorias não corresponde ao total de pessoas afetadas. Tente novamente.\n")
 
 print("\n Dados registrados com sucesso!")
+
+total_desastres = len(tipos_desastres)
+
+total_geral_afetados = sum(total_afetados)
+
+total_criancas = sum(criancas)
+total_adultos = sum(adultos)
+total_idosos = sum(idosos)
+total_mobilidade = sum(mobilidade_reduzida)
+total_feridos = sum(feridos)
+
+
+categorias = ["Crianças", "Adultos", "Idosos", "Mobilidade reduzida", "Feridos"]
+valores_categorias = [total_criancas, total_adultos, total_idosos, total_mobilidade, total_feridos]
+
+indice_mais_afetada = valores_categorias.index(max(valores_categorias))
+categoria_mais_afetada = categorias[indice_mais_afetada]
+
+indice_maior_desastre = total_afetados.index(max(total_afetados))
+
+rua_mais_grave = ruas[indice_maior_desastre]
+bairro_mais_grave = bairros[indice_maior_desastre]
+cidade_mais_grave = cidades[indice_maior_desastre]
+pais_mais_grave = paises[indice_maior_desastre]
+evento_mais_grave = tipos_desastres[indice_maior_desastre]
